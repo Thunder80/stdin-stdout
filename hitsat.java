@@ -1,5 +1,5 @@
 import java.io.*;
-class hitsat{
+class inputOutput{
 
 	public static void main(String[] args) throws IOException{
 
