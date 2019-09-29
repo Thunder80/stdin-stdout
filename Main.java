@@ -1,19 +1,17 @@
-
 // Java program For handling Input/Output 
 import java.io.*; 
 import java.util.*;
 import java.math.*;
-
+import java.awt.*;
 
 public class Main 
 { 
     Scanner sc;
-
+    int max = 0,cur = 0;
 //actual logic
-void solve(){
-   
-}
-
+    void solve(){
+        
+    }
 
 //constructor
     Main(){
@@ -237,6 +235,17 @@ void solve(){
 
         }
         return found;
+    }
+
+    int stb(String s)
+    {
+        int sum = 0;
+        int k = 0;
+        for(int i = s.length()-1;i >= 0;i--)
+        {
+            sum += stoi(s.charAt(i)+"") * Math.pow(2, k++);
+        }
+        return sum;
     }
 
 }
